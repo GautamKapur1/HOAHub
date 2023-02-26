@@ -1,0 +1,54 @@
+<h1> Edit Profile</h1>
+
+<button> Change Community </button>
+
+<%= form_with model: @user do |form| %>
+    <div>
+        <%= form.label :"New Username" %><br>
+        <%= form.text_field :username %>
+    </div>
+
+    <div>
+        <%= form.label :"New Password" %><br>
+        <%= form.text_field :password %>
+    </div>
+
+    <div>
+        <%= form.label :"New Email" %><br>
+        <%= form.text_field :email %>
+    </div>
+
+    <div>
+        <%= form.label :"New Phone Number" %><br>
+        <%= form.text_field :phoneNumber %>
+    </div>
+
+    <div>
+        <%= form.label :"Street Address" %><br>
+        <%= form.text_field :address %>
+    </div>
+
+    <div>
+        <%= form.label :"App/Suite Number" %><br>
+        <%= form.text_field :address %>
+    </div>
+
+    <div>
+        <%= form.label :"State" %><br>
+        <%= form.text_field :state %>
+    </div>
+
+    <div>
+        <%= form.label :"City" %><br>
+        <%= form.text_field :city %>
+    </div>
+
+    <div>
+        <%= form.label :"Zip Code" %><br>
+        <%= form.text_field :zipCode %>
+    </div>
+
+    <div>
+        <%= form.submit('Save Changes') %>
+    </div>
+<% end %>
