@@ -1,0 +1,29 @@
+<h1> Complaint Form</h1>
+<h2> We are here to help! </h2>
+<%= form_with model: @user do |form| %>
+    <div>
+        <%= form.label :"Complainant's Name" %><br>
+        <%= form.text_field :name %>
+    </div>
+
+    <div>
+        <%= form.label :"Complainant's Email"%> <br>
+        <%= form.text_field :email %>
+    </div>
+
+    <div>
+        <%= form.label :"Community Name"%> <br>
+        <%= form.text_field :community %>
+    </div>
+
+    <div>
+        <%= form.label :'This complaint is regarding: '%> <br>
+        <%= form.text_field :complaint %>
+    </div>
+
+    <div> 
+        <%= form.submit('Submit') %>        
+    </div>
+
+    <button> Alert Instead </button>
+<% end %>
