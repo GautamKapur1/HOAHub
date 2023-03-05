@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  host: localhost
+  username: hoahub_admin
+  password: admin
+  database: hoahub_db
+
+development:
+  <<: *default
+  database: hoahub_db
+
+test:
+  <<: *default
+  database: hoahub_db
+
+production:
+  <<: *default
+  database: hoahub_db
