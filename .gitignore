@@ -32,3 +32,21 @@
 
 # Ignore database to prevent accidental push
 database.yml
+
+mailers
+bin
+jobs
+
+# Ignore config folders
+config/environments
+config/initializers
+config/locales
+
+# Misc folders
+log
+lib
+storage
+tmp
+vendor
+public
+
