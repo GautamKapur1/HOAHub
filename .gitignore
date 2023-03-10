@@ -49,4 +49,5 @@ storage
 tmp
 vendor
 public
+db/seeds.rb
 
