@@ -11,6 +11,9 @@ class HomeController < ApplicationController
 
   def info
   end
+
+  def login
+  end
   
   def calendar
   end

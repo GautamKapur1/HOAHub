@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/profile", to: "profile#index"
   get "/profile/edit", to: "profile#edit"
+  get "/login", to: "home#login"
 
 end
