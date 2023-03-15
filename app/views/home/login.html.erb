@@ -1,6 +1,7 @@
 <html class="no-js" lang="en">
 
 <head>
+  <title>HOAHub Login</title>
   <%= stylesheet_link_tag 'animate' %>
   <%= stylesheet_link_tag 'et-line-icons' %>
   <%= stylesheet_link_tag 'extralayers' %>
@@ -607,7 +608,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-8 col-xs-11 center-col xs-no-padding">
-        <form>
+        <form action="/login" method="POST">
           <div class="form-group no-margin-bottom">
             <!-- label  -->
             <label for="username" class="text-uppercase">Username</label>
@@ -745,6 +746,5 @@
   <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
   <!-- scroll to top End... -->
 </footer>
-<!-- end footer -->
 </body>
 </html>
